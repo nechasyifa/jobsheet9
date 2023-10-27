@@ -51,7 +51,7 @@ public class Dasar {
             System.out.println("\t\t\t\t\t MENU");
             System.out.println("\t\t\t\t     Daftar Hotel");
             System.out.println(
-                    "==============================================================================================");
+                    "=============================================================================================");
             if (counter == 3) {
                 disc += 0.03f;
                 System.out.println("\t\t *Selamat Anda mendapatkan discount loyalty sebesar 3%*");
@@ -113,14 +113,14 @@ public class Dasar {
                     } else {
                         System.out.println("\t\t Terimakasih Telah Memesan Hotel di Aplikasi Kami");
                     }
+
                     System.out.println(
                             "===============================================================================================");
-                    System.out.print("\t\t   Apakah anda ingin kembali ke menu (Y/T) : ");
+                    System.out.print("\t\t\t   Kembali ke menu (ketik 'Y') : ");
                     backMenu = scanner.next().charAt(0);
                     if (backMenu == 'y' || backMenu == 'Y') {
-                    } else {
-                        break;
-                    }
+                    } else 
+                        System.out.println("\t\t\t\t    Silahkan Exit");
                     break;
 
                 case 2:
@@ -172,22 +172,23 @@ public class Dasar {
                     } else {
                         System.out.println("\t\t Terimakasih Telah Memesan Hotel di Aplikasi Kami");
                     }
+
                     System.out.println(
                             "===============================================================================================");
-                    System.out.print("\t\t   Apakah anda ingin kembali ke menu (Y/T) : ");
+                    System.out.print("\t\t\t   Kembali ke menu (ketik 'Y') : ");
                     backMenu = scanner.next().charAt(0);
                     if (backMenu == 'y' || backMenu == 'Y') {
-                    } else {
-                        break;
-                    }
+                    } else 
+                        System.out.println("\t\t\t\t    Silahkan Exit");
                     break;
 
                 case 3:
-                    System.out.println("Your Now Exit");
+                    System.out.println("\t\t\t\t ***Your Now Exit***");
+                    System.out.println("\t\t\t\t    **Thank You**");
                     break;
 
                 default:
-                    System.out.println("Menu yang anda masukkan salah!");
+                    System.out.println("\t\t Menu yang anda masukkan salah!");
                     break;
             }
             counter++;
