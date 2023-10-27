@@ -17,8 +17,9 @@ public class Tugas1 {
         int umurTertua = umurMhs[0];
         int umurTermuda = umurMhs[0];
 
-        double totalUmur = umurMhs[0];
-        for (int i = 1; i < jumlahMhs; i++) {
+        int totalUmur = 0;
+
+        for (int i = 0; i < jumlahMhs; i++) {
             if (umurMhs[i] > umurTertua) {
                 umurTertua = umurMhs[i];
             }
@@ -33,19 +34,5 @@ public class Tugas1 {
         System.out.println("Umur Mahasiswa Tertua: " + umurTertua + " tahun");
         System.out.println("Umur Mahasiswa Termuda: " + umurTermuda + " tahun");
         System.out.println("Rata-rata Umur Mahasiswa: " + rataRataUmur + " tahun");
-    }
-
-    public static void bubbleSort(int[] arr) {
-        int n = arr.length;
-        for (int i = 0; i < n - 1; i++) {
-            for (int j = 0; j < n - i - 1; j++) {
-                if (arr[j] > arr[j + 1]) {
-                    
-                    int temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
-                }
-            }
-        }
     }
 }
